@@ -1,9 +1,9 @@
 dag:
-  id: all_parameters_example
-  description: DAG exemplo utilizando todos os demais parâmetros.
+  id: consig_parameters
+  description: DAG customizado criado para o consignado.
   tags:
     - prefeituras
-  schedule: 0 8 * * MON-FRI
+  schedule: 0 8 * * MON
   search:
     header: Pesquisa no DOU
     terms:
@@ -24,6 +24,6 @@ dag:
     use_summary: True
   report:
     emails:
-      - thiago.amaral@fictor.com.br
+      - heads@fictorconsig.com.br
     attach_csv: True
-    subject: DAG teste
+    subject: Resultados da União para o Consignado
